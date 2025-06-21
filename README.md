@@ -1,2 +1,2 @@
 # TeckiesChronicles
-https://muslih-diy.github.io/
+https://muscodev.github.io/
