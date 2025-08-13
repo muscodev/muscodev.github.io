@@ -8,109 +8,70 @@
 
 </head>
 <body>
-<div class="head">
-    <div class="headerobjectswrapper">
-        <header> Teckies Chronicle </header>
+<div >
+    <div style="text-align: center;">
+        <header style="font-size: 30pt;"> Teckies Chronicle </header>
+        <p>by Muslih K</p>
     </div>
 
     <div id="subhead" class="subhead">
 
     </div>
 </div>
-<div class="content">
-    <div class="collumns">
-        <div class="collumn">
-            <div class="head"><span class="headline hl1"> <a href="data_analysis/data_analysis.md">Data Analysis</a></span>
-                <p><span class="headline hl6">("The data may speak, but it is the storyteller who gives it a voice and meaning.")</span></p>
-            </div>
-            <p>
-                Data analysis is the process of examining, cleaning, transforming, and interpreting data to uncover meaningful patterns, insights, and trends. It helps in making informed decisions, solving problems, and understanding the relationships within the data
+  <div id="blog-container"></div>
 
-            </p>
-            <p>
-                Data visualization is the graphical representation of data using charts, graphs, and other visual elements. It simplifies complex data and makes it easier to understand, allowing patterns and trends to be quickly identified.
-            </p>
+  <script>
+    fetch('posts/posts.json')
+      .then(res => res.json())
+      .then(groups => {
+        const container = document.getElementById('blog-container');
 
-        </div>
-        <div class="collumn">
-            <div class="head"><span class="headline hl1"> SIP and Netwoking</span>
-                <p><span class="headline hl6">(Session Initiation Protocol)</span></p>
-            </div>
-            <p>
-                Session Initiation Protocol (SIP) is a communication protocol used for establishing, maintaining, and terminating real-time sessions, such as voice and video calls, instant messaging, and multimedia conferences, over IP networks. SIP is an application-layer protocol that operates on top of the Transport Layer Protocol (usually UDP or TCP) and is widely used for Voice over IP (VoIP) and other real-time communication services.
-            </p>
-            <figure class="figure">
-                <img class="media" src="https://www.learncisco.net/assets/images/icomm/019-remote-call-flow.jpg" alt="">
-                <figcaption class="figcaption"><br>SIP FLOW DIAGRAM</figcaption>
-            </figure>
-    
-            <p>Let's walk through a basic example of setting up a SIP communication using <strong>Kamailio, Asterisk, Docker, and softphone</strong></p>
-    
+        groups.forEach(group => {
+          const groupDiv = document.createElement('div');
+          const groupTitle = document.createElement('h2');
+          groupTitle.textContent = group.group;
+          groupDiv.appendChild(groupTitle);
 
-    
-        </div>        
-        <div class="collumn">
-            <div class="head"><span class="headline hl3">Python For All your Needs </span>
-                <p><span class="headline hl6">Automate almost Everything </span></p>
-            </div>
-            <figure class="figure">
-                <img class="media" src="https://communityblog.fedoraproject.org/wp-content/uploads/2015/11/Python-logo.png" alt="">
+          group.posts.forEach(post => {
+            const postDiv = document.createElement('div');
+            postDiv.className = "head";
 
-                <!-- <figcaption class="figcaption"><br>Python</figcaption> -->
-            </figure>            
-            
-            <p> web development, data analysis, artificial intelligence, automation, scientific computing, and more</p>
-        </div>
+            const titleLink = document.createElement('a');
+            titleLink.href = `${encodeURIComponent(post.file)}`;
+            titleLink.textContent = post.title;
 
-        <div class="collumn">
-            <div class="head"><span class="headline hl3">Dockerization</span>
-                <p><span class="headline hl6">a swift developemnt,testing, deploying, and releaseing and do it again </span></p>
-            </div>
-            <figure class="figure">
-                <img class="media" src="https://th.bing.com/th/id/OIP.g64UScyD9xBta8nws_UABgHaEo?pid=ImgDet&rs=1" alt="">
+            const titleSpan = document.createElement('span');
+            titleSpan.className = "headline hl1";
+            titleSpan.appendChild(titleLink);
 
-                <!-- <figcaption class="figcaption"><br>dockerisation</figcaption> -->
-            </figure>            
-            
-            <p> </p>
-        </div>
+            const quoteP = document.createElement('p');
+            const quoteSpan = document.createElement('span');
+            quoteSpan.className = "headline hl6";
+            quoteSpan.textContent = post.quote;
+            quoteP.appendChild(quoteSpan);
 
-        <div class="collumn">
-            <div class="head"><span class="headline hl1">Challenges boost you brain</span>
-                <p><span class="headline hl6">LeetCode,Advent of Code </span></p>
-            </div>
-            <figure class="figure">
-                <img class="media" src="https://th.bing.com/th/id/OIP.nV5xP59gcmc-LDeJysRrqAAAAA?pid=ImgDet&rs=1" alt="">
+            postDiv.appendChild(titleSpan);
+            postDiv.appendChild(quoteP);
 
-                <figcaption class="figcaption"><br></figcaption>
-            </figure>            
-            
-            <p> </p>
-        </div>
+            post.description.forEach(descText => {
+              const p = document.createElement('p');
+              p.textContent = descText;
+              postDiv.appendChild(p);
+            });
 
-        <div class="collumn">
-            <div class="head"><span class="headline hl3">You want to chat with you colleges?</span>
-                <p><span class="headline hl6">OffcieChat..</span></p>
-            </div>
-            <figure class="figure">
-                <img class="media" src="https://github.com/muscodev/OfficeChat/raw/main/icon-1.png" alt="">
+            groupDiv.appendChild(postDiv);
+          });
 
-                <figcaption class="figcaption"><br></figcaption>
-            </figure>            
-            
-            <p>This is a evolving repository , It is written using python Fastapi and Vujs , you will get it <a href="https://github.com/muscodev/OfficeChat">at</a> </p>
-        </div>
-    
-    
-    </div>
-</div>
-
+          container.appendChild(groupDiv);
+        });
+      });
+  </script>
 <script>
     const currentDate = new Date();
     const subhead = document.getElementById('subhead');
     subhead.textContent = currentDate.toDateString();
 
-    </script>
+</script>
 
 </body>
 </html>
