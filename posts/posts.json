@@ -4,18 +4,30 @@
     "posts": [
       {
         "title": "Basic of data analysis",
-        "file": "data_analysis/data_analysis.md",
+        "file": "data_analysis/data_analysis",
         "description": [
           "Data analysis is the process of examining, cleaning, transforming, and interpreting data to uncover meaningful patterns, insights, and trends. It helps in making informed decisions, solving problems, and understanding the relationships within the data. Data visualization is the graphical representation of data using charts, graphs, and other visual elements. It simplifies complex data and makes it easier to understand, allowing patterns and trends to be quickly identified."
         ]
       },
       {
         "title": "Call center data analysis",
-        "file": "data_analysis/call-center.md",
+        "file": "data_analysis/call-center",
         "description": [
           "Give some introduction about data analysis in callcenter domain"
         ]
       }      
     ]
-  }
+  },
+  {
+    "group": "miscellaneous",
+    "posts": [
+      {
+        "title": "🕒 Time & Timezones in Software Development — Why They Matter",
+        "file": "miscellaneous/time_zone",
+        "description": [
+          "As a software developer or automation specialist, you know this truth: Time and timezones can make or break your system!"
+        ]
+      }     
+    ]
+  }  
 ]

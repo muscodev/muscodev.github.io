@@ -20,4 +20,6 @@ To present data effectively, you can use various visualizations, such as bar cha
 6. Correct way of representation:
 When representing data, it's essential to choose the appropriate visualization that conveys the information clearly and accurately. Avoid cluttered or misleading graphs and charts, and provide context and labels for easy understanding.
 
-*   [CALL-CENTER DATA ANALYSIS](call-center)
+
+*   [CALL-CENTER DATA ANALYSIS](/data_analysis/call-center)
+
