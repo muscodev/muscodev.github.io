@@ -43,16 +43,18 @@ Think of **UTC** as the *"world clock"* — it never changes with seasons or geo
 
 Below are common ways date and time are represented across systems and standards.
 
+
 | Format Type | Example | Notes |
-|-------------|-----------------------------|---------------------------------------|
-| **UTC** | 2025-08-16 08:30:00 UTC | Global reference time |
-| **IST** | 2025-08-16 14:00:00 IST | UTC+05:30 |
-| **ISO 8601** | 2025-08-16T14:00:00+05:30 | Standard for APIs |
-| **ISO 8601 (UTC)** | 2025-08-16T08:30:00Z | `Z` = UTC |
-| **Epoch** | 1765925400 | Seconds since 1970 UTC |
-| **RFC 2822** | Sat, 16 Aug 2025 14:00:00 +0530 | Used in HTTP/Email headers |
-| **Windows Local** | 8/16/2025 2:00:00 PM | Regional format dependent |
-| **Linux Local** | Sat Aug 16 14:00:00 IST 2025 | Depends on `date` command configuration|
+|-------------|---------|-------|
+| `UTC` | 2025-08-16 08:30:00 UTC | Global reference time |
+| `IST` | 2025-08-16 14:00:00 IST | UTC+05:30 |
+| `ISO 8601` | 2025-08-16T14:00:00+05:30 | Standard for APIs |
+| `ISO 8601 (UTC)` | 2025-08-16T08:30:00Z | `Z` = UTC |
+| `Epoch` | 1765925400 | Seconds since 1970 UTC |
+| `RFC 2822` | Sat, 16 Aug 2025 14:00:00 +0530 | Used in HTTP/Email headers |
+| `Windows Local` | 8/16/2025 2:00:00 PM | Regional format dependent |
+| `Linux Local` | Sat Aug 16 14:00:00 IST 2025 | Depends on `date` command configuration|
+
 ---
 
 ## 🐧 Linux Timezone Basics
