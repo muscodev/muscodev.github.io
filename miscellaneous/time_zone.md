@@ -53,6 +53,7 @@ Below are common ways date and time are represented across systems and standards
 | **RFC 2822**        | Sat, 16 Aug 2025 14:00:00 +0530 | Used in HTTP/Email headers             |
 | **Windows Local**   | 8/16/2025 2:00:00 PM            | Regional format dependent              |
 | **Linux Local**     | Sat Aug 16 14:00:00 IST 2025    | Depends on `date` command configuration|
+
 ---
 
 ## 🐧 Linux Timezone Basics
