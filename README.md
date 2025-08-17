@@ -13,3 +13,5 @@ https://muscodev.github.io/
 ## Miscellaneous
 
 * [Time & Timezones in Software Development — Why They Matter](miscellaneous/time_zone.md)
+
+* [Memory Management and Garbage Collection](miscellaneous/memory_management.md)

@@ -27,7 +27,14 @@
         "description": [
           "As a software developer or automation specialist, you know this truth: Time and timezones can make or break your system!"
         ]
-      }     
+      },
+      {
+        "title": "Memory Management and Garbage Collection",
+        "file": "miscellaneous/memory_management",
+        "description": [
+          "Understanding Memory Management & Garbage Collection Across Languages with a simple exampl"
+        ]
+      }
     ]
-  }  
+  }
 ]
