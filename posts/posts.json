@@ -22,6 +22,13 @@
     "group": "miscellaneous",
     "posts": [
       {
+        "title": "🔒 Understanding Secure Links (Signed URLs)",
+        "file": "design/securelink.md",
+        "description": [
+          "When web applications serve files such as images, videos, or documents, they must ensure that only the right users can access them. Simply hosting files on a public server or CDN makes them vulnerable to unauthorized sharing, hotlinking, or scraping."
+        ]
+      },      
+      {
         "title": "🕒 Time & Timezones in Software Development — Why They Matter",
         "file": "miscellaneous/time_zone",
         "description": [
