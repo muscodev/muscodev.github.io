@@ -1,6 +1,6 @@
 # MkDocs build output
-*site/
-Lekhanam/site
+site/
+Lekhanam/site/
 
 # Python
 __pycache__/
