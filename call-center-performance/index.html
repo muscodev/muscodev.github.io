@@ -1,0 +1,683 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Your space for thoughtful documentation and insights">
+      
+      
+        <meta name="author" content="Muslih k">
+      
+      
+      
+        <link rel="prev" href="../data_anlalysis_overview/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Call-center Data Analysis - Lekhanam</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#call-center-data-analysis" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Lekhanam" class="md-header__button md-logo" aria-label="Lekhanam" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Lekhanam
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Call-center Data Analysis
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Lekhanam" class="md-nav__button md-logo" aria-label="Lekhanam" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    Lekhanam
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../time_zone/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🕒 Time & Timezones in Software Development — Why They Matter
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../securelink/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔒 Understanding Secure Links (Signed URLs)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../memory_management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Memory Management and Garbage Collection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data_anlalysis_overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    An Overview of data analysis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Call-center Data Analysis
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Call-center Data Analysis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#kpi-for-analyse-call-center-performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        KPI for Analyse call-center performance
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kpis-for-analays-agent-prformance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        KPIs for Analays Agent prformance
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boosting-call-center-efficiency-and-elevating-customer-relations-with-ml" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Boosting Call Center Efficiency and Elevating Customer Relations with ML
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#kpi-for-analyse-call-center-performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        KPI for Analyse call-center performance
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kpis-for-analays-agent-prformance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        KPIs for Analays Agent prformance
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boosting-call-center-efficiency-and-elevating-customer-relations-with-ml" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Boosting Call Center Efficiency and Elevating Customer Relations with ML
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="call-center-data-analysis">Call-center Data Analysis<a class="headerlink" href="#call-center-data-analysis" title="Permanent link">&para;</a></h1>
+<h3 id="kpi-for-analyse-call-center-performance">KPI for Analyse call-center performance<a class="headerlink" href="#kpi-for-analyse-call-center-performance" title="Permanent link">&para;</a></h3>
+<p>Analyzing a call center involves assessing its performance and efficiency in handling customer interactions. Here are some key performance indicators (KPIs) and metrics commonly used in call center analysis:</p>
+<p><strong>1. Average Handle Time (AHT):</strong> </p>
+<p>The average time taken to handle a customer call, including talk time and any after-call work.</p>
+<p><strong>2. First Call Resolution (FCR):</strong> </p>
+<p>The percentage of customer inquiries or issues resolved during the first call without the need for follow-up interactions.</p>
+<p><strong>3. Service Level:</strong>  </p>
+<p>The percentage of calls answered within a specified time threshold, such as 80% of calls answered within 20 seconds.</p>
+<p><strong>4. Abandonment Rate:</strong> </p>
+<p>The percentage of calls that are abandoned by customers before reaching an agent or being resolved.</p>
+<p><strong>5. Occupancy Rate:</strong> </p>
+<p>The percentage of time agents are actively handling calls or engaged in other work tasks.</p>
+<p><strong>6. Average Speed of Answer (ASA):</strong> </p>
+<p>The average time it takes for a call to be answered by an agent.</p>
+<p><strong>7. Customer Satisfaction (CSAT):</strong></p>
+<p>A measure of customer satisfaction obtained through post-call surveys or feedback.</p>
+<p><strong>8. Net Promoter Score (NPS):</strong> </p>
+<p>A metric that gauges customer loyalty and likelihood to recommend the call center's service.</p>
+<p><strong>9. Call Volume:</strong> </p>
+<p>The total number of calls received by the call center during a specific period.</p>
+<p><strong>10. Service Level Agreement (SLA) Compliance:</strong> </p>
+<p>The percentage of calls meeting the agreed-upon SLAs with clients or customers.</p>
+<p><strong>11. Call Resolution Rate:</strong> </p>
+<p>The percentage of calls that result in successful resolutions, whether handled by a single agent or transferred.</p>
+<p><strong>12. Agent Performance Metrics:</strong> </p>
+<p>Individual agent metrics like call handling time, customer satisfaction ratings, and adherence to schedule.</p>
+<p><strong>13. Call Abandonment Patterns:</strong></p>
+<p>Analyzing when and why customers abandon calls, which could indicate potential issues.</p>
+<p><strong>14. Call Transfer Rate:</strong> </p>
+<p>The percentage of calls transferred to different departments or agents.</p>
+<p><strong>15. Call Quality Monitoring:</strong> </p>
+<p>Scores based on the quality of interactions measured through call evaluations.</p>
+<p>These metrics help call center managers understand the overall performance, identify areas for improvement, optimize resource allocation, and enhance the customer experience. Analyzing call center data can lead to better decision-making and increased efficiency in managing customer interactions.</p>
+<h3 id="kpis-for-analays-agent-prformance">KPIs for Analays Agent prformance<a class="headerlink" href="#kpis-for-analays-agent-prformance" title="Permanent link">&para;</a></h3>
+<p>When analyzing agents' performance in a call center, several key metrics (matrices) help evaluate their effectiveness, efficiency, and overall contribution to customer satisfaction. Here are some essential matrices to consider:</p>
+<ul>
+<li>
+<p><strong>Average Handle Time (AHT):</strong> The average time an agent spends handling a customer call, including talk time and after-call work. A lower AHT indicates efficient call handling.</p>
+</li>
+<li>
+<p><strong>First Call Resolution (FCR):</strong> The percentage of customer inquiries or issues resolved by an agent during the first call, without the need for follow-up interactions.</p>
+</li>
+<li>
+<p><strong>Customer Satisfaction (CSAT):</strong> Feedback or survey scores provided by customers after interacting with an agent. It measures the level of customer satisfaction with the agent's service.</p>
+</li>
+<li>
+<p><strong>Quality Score:</strong> The score assigned to an agent's performance during call quality evaluations or monitoring. It assesses adherence to call scripts, politeness, and problem-solving abilities.</p>
+</li>
+<li>
+<p><strong>Adherence to Schedule:</strong> The percentage of time an agent adheres to their assigned schedule, including breaks and lunchtime.</p>
+</li>
+<li>
+<p><strong>Occupancy Rate:</strong> The percentage of time an agent spends handling calls or engaged in productive work. High occupancy rates indicate good agent utilization.</p>
+</li>
+<li>
+<p><strong>Call Transfer Rate:</strong> The percentage of calls transferred to other departments or agents. Lower transfer rates imply effective issue resolution at the first point of contact.</p>
+</li>
+<li>
+<p><strong>Average Speed of Answer (ASA):</strong> The average time taken to answer an incoming call. A low ASA indicates prompt call handling.</p>
+</li>
+<li>
+<p><strong>Agent Availability:</strong> The percentage of time an agent is available to take calls during their shift.</p>
+</li>
+<li>
+<p><strong>Conversion Rate (for Sales Agents):</strong> The percentage of successful sales conversions achieved by sales agents during customer interactions.</p>
+</li>
+<li>
+<p><strong>Repeat Call Rate:</strong> The percentage of calls from the same customer within a specific time period, indicating unresolved issues or customer dissatisfaction.</p>
+</li>
+<li>
+<p><strong>Agent Attrition Rate</strong>: The percentage of agents leaving the call center within a given time frame, reflecting the job satisfaction and overall work environment.</p>
+</li>
+</ul>
+<h2 id="boosting-call-center-efficiency-and-elevating-customer-relations-with-ml">Boosting Call Center Efficiency and Elevating Customer Relations with ML<a class="headerlink" href="#boosting-call-center-efficiency-and-elevating-customer-relations-with-ml" title="Permanent link">&para;</a></h2>
+<p>Here are some ways ML can be specifically relevant to enhancing call center operations</p>
+<ol>
+<li>
+<p><strong>Predictive Call Volume and Patterns:</strong> ML can forecast call volumes and patterns, enabling call centers to staff agents optimally and plan for peak times, ensuring better resource management.</p>
+</li>
+<li>
+<p><strong>Intelligent Call Routing:</strong> ML algorithms can analyze caller data, such as past interactions and preferences, to intelligently route calls to the most suitable agents, leading to higher first call resolution rates and improved customer satisfaction.</p>
+</li>
+<li>
+<p><strong>Sentiment Analysis:</strong> ML-powered sentiment analysis can assess customer emotions during calls, helping agents to respond empathetically and address customer concerns effectively.</p>
+</li>
+<li>
+<p><strong>Speech Analytics:</strong> ML can analyze recorded calls to identify customer needs, agent performance, and areas for improvement, providing valuable insights for agent training and call center optimization.</p>
+</li>
+<li>
+<p><strong>Chatbot Assistance:</strong> ML-driven chatbots can handle routine customer queries, reducing agent workload, and freeing them up to focus on more complex issues.</p>
+</li>
+<li>
+<p><strong>Customer Churn Prediction:</strong> ML models can predict customer churn probability, allowing proactive measures to retain valuable customers and improve customer loyalty.</p>
+</li>
+<li>
+<p><strong>Real-time Performance Monitoring:</strong> ML-based dashboards can provide real-time monitoring of key metrics, alerting supervisors to potential issues, and enabling timely intervention.</p>
+</li>
+<li>
+<p><strong>Agent Performance Prediction:</strong> ML models can predict agent performance based on historical data, helping to identify high-performing agents and optimize resource allocation.</p>
+</li>
+<li>
+<p><strong>Quality Assurance:</strong> ML can automate call quality monitoring, ensuring adherence to call scripts, compliance, and consistent service standards.</p>
+</li>
+<li>
+<p><strong>Automated Call Summarization:</strong> ML can summarize call content and generate transcripts, helping managers identify key issues and monitor interactions efficiently.</p>
+</li>
+</ol>
+<p>By incorporating ML into call center operations, organizations can streamline processes, improve agent performance, increase customer satisfaction, and optimize overall call center efficiency. The possibilities are extensive, and as ML technology advances, the potential to enhance call center performance will continue to grow.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>
