@@ -20,10 +20,10 @@ This code may “work” on some machines but fail on others because welcome is 
 here is output
 
 ## on my machine
-![on my machine](./mypc_c.png)
+![on my machine](./assets/blog/mypc_c.png)
 
 ## on w3school
-![on w3school](./w3school_c.png)
+![on w3school](./assets/blog/w3school_c.png)
 
 
 
