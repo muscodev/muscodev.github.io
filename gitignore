@@ -1,0 +1,35 @@
+# MkDocs build output
+*site/
+Lekhanam/site
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environment
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+```
+
+### 2. What TO Commit
+```
+✅ Commit these:
+├── docs/              # All your markdown files
+├── mkdocs.yml         # Configuration
+├── .gitignore         # Git ignore rules
+├── requirements.txt   # Python dependencies (optional)
+└── README.md          # Project readme
