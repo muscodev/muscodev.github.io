@@ -1,0 +1,27 @@
+site_name: Lekhanam
+site_description: Your space for thoughtful documentation and insights
+site_author: Muslih k
+
+theme:
+  name: material  # or 'readthedocs' for default theme
+  palette:
+    primary: indigo
+    accent: indigo
+  logo: assets/logo.png
+  favicon: assets/favicon.png
+
+nav:
+  - Home: index.md
+  - 🕒 Time & Timezones in Software Development — Why They Matter : time_zone.md
+  - 🔒 Understanding Secure Links (Signed URLs) : securelink.md
+  - Memory Management and Garbage Collection : memory_management.md
+  - An Overview of data analysis : data_anlalysis_overview.md
+  - Call-center Data Analysis : call-center-performance.md
+
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc:
+      permalink: true
+  - attr_list
